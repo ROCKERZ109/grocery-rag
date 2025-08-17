@@ -68,15 +68,16 @@ interface NewMealPlanStructure {
 // --- End of Updated Type Definitions ---
 
 // Type for the older success/error structure (fallback)
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 interface OldApiResponse {
   success?: boolean;
   message?: string;
-  plan_by_day?: any;
-  plan?: any[];
-  totals?: any;
+  plan_by_day?: unknown;
+  plan?: unknown[];
+  totals?: unknown;
   budgetIncrease?: number;
-  weekly_totals?: any;
-  shopping_list?: any[];
+  weekly_totals?: unknown;
+  shopping_list?: unknown[];
 }
 
 // Union type for all possible response structures

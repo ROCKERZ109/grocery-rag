@@ -129,13 +129,19 @@ If the user just asks for a weekly grocery shopping list, provide intelligently 
         vector_store_ids: [vectorStoreId],
         // Optional: cap how many chunks to feed the model
         // max_num_results: 8,
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
       } as any,
     ],
   });
 
   // output_text = handy, already-concatenated text form of the model’s reply
   // Annotations (if present) point to the files/chunks used.
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
   const answer = (resp as any).output_text ?? "";
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
   const output = (resp as any).output ?? [];
   const annotations =
     output?.[1]?.content?.[0]?.annotations ?? []; // guard: schema can vary
