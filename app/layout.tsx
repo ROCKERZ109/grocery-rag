@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Grocery AI Planner",
+  title: "Grocery Planner AI",
   description: "Grocery AI Planner is a tool to help you plan your meals and grocery shopping efficiently.",
 };
 
